@@ -23,7 +23,7 @@ body {
 }
 
 .span img {
-    
+    cursor: pointer;
     position: relative;
     height: 34px;
 }
@@ -33,7 +33,6 @@ body {
 
 .navbar ul {
     transition: all 2s;
-
     display: none; 
     position: relative;
     z-index: 24; 
@@ -52,6 +51,7 @@ body {
 }
 
 .navbar ul img {
+    cursor: pointer;
     margin-bottom: 34px;
     height: 47px;
     width: 45px;
@@ -200,7 +200,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #e1efed;
 }
 .contact-details {
     margin: 100px;
@@ -210,7 +210,7 @@ body {
 }
 .contact-details h2 {
     margin-bottom: 10px;
-    color: gray;
+    color: black;
     text-decoration: underline;
 }
 .contact-details p {
@@ -293,14 +293,23 @@ iframe {
             width: 100%;
         }
 
-@media (max-width:420px){
- #nav{
-    width: 100%;
-    margin: 50px;
-    justify-content: space-between;
- }
+@media (min-width:420px) and (max-width:1023px){
+    #nav {
+        width: 69%;
+        margin: 50px;
+        justify-content: space-between;
+    }
+    .left p {
+        margin: 52px 0px;
+        font-size: 21px;
+    }
+    .left h1 {
+        color: gray;
+        margin-top: 34px;
+        font-size: 41px;
+    }
  #home {
-    width: 155%;
+    width: 100%;
     margin: 143px -5px;
     display: flex;
     flex-direction: column;
@@ -308,7 +317,7 @@ iframe {
     align-items: center;
 }
 #about {
-    width: 155%;
+    width: 100%;
     margin: 143px -5px;
     display: flex;
     flex-direction: column;
@@ -326,10 +335,16 @@ iframe {
  }
  .right img{
     margin-right: 0px;
+    box-shadow: 16px 11px 43px -12px black;
+    height: 469px;
+    border-radius: 50%;
+    background-color: #0fac8f;
+    width: 395px;
  }
 
- .product1:nth-child(1), .product1:nth-child(2), .product1:nth-child(3) , .product1:nth-child(4) {
-    margin: 21px 108px;
+ .product1:nth-child(1), .product1:nth-child(2), .product1:nth-child(3), .product1:nth-child(4) {
+    margin: 21px 42px;
+    width: 80%;
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -337,8 +352,8 @@ iframe {
 }
 
 .product1 img {
-    height: 534px;
-    width: 100%;
+    height: 360px;
+    width: 93%;
     display: block;
 }
 
@@ -357,7 +372,16 @@ iframe {
     width: 100%;
     margin-right: 0px;
  }
-
+ .contact-details {
+    margin: 50px;
+    font-size: 21px;
+    flex: 1;
+}
+footer {
+    color: black;
+    padding: 20px 0;
+    width: 64%;
+}
  .footer-container {
     width: 146%;
     flex-direction: column;
@@ -366,16 +390,174 @@ iframe {
     justify-content: center;
 }
 .contact-container {
-    width: 146%;
+    width: 91%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #e1efed;
 }
-.footer-bottom{
+.footer-bottom {
+    margin: auto;
+    width: 151%;
     text-align: center;
+}
+.navbar ul {
+    transition: all 2s;
+    display: none;
+    position: relative;
+    z-index: 24;
+    border-radius: 16px;
+    padding: 34px;
+    transform: translate(25px, -41px);
+    background-color: rgba(187, 182, 182, 0.5);
+    text-decoration: none;
+    list-style: none;
+    flex-direction: column;
+    height: 529px;
+    width: 127px;
+    font-size: 27px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.footer-column {
+    min-width: 100%;
+    margin-bottom: 20px;
+}
+}
+@media (max-width:420px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    #nav {
+        width: 69%;
+        margin: 50px;
+        justify-content: space-between;
+    }
+    .left p {
+        margin: 52px 0px;
+        font-size: 21px;
+    }
+    .left h1 {
+        color: gray;
+        margin-top: 34px;
+        font-size: 41px;
+    }
+ #home {
+    width: 100%;
+    margin: 143px -5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#about {
+    width: 100%;
+    margin: 143px -5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.pr2{
+    padding: 0px;
+}
+ .right{
+    margin: 0px;
+ }
+ .left{
+    padding-right: 0px;
+ }
+ .right img{
+    margin-right: 0px;
+    box-shadow: 16px 11px 43px -12px black;
+    height: 469px;
+    border-radius: 50%;
+    background-color: #0fac8f;
+    width: 395px;
+ }
+
+ .product1:nth-child(1), .product1:nth-child(2), .product1:nth-child(3), .product1:nth-child(4) {
+    margin: 21px 42px;
+    width: 80%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product1 img {
+    height: 360px;
+    width: 93%;
+    display: block;
+}
+
+
+ #products{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+ }
+ .pr2{
+    padding: none;
+ }
+
+ .product1{
+    height: 100%;
+    width: 100%;
+    margin-right: 0px;
+ }
+ .contact-details {
+    margin: 50px;
+    font-size: 21px;
+    flex: 1;
+}
+footer {
+    color: black;
+    padding: 20px 0;
+    width: 64%;
+}
+ .footer-container {
+    width: 146%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.contact-container {
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #e1efed;
+}
+.footer-bottom {
+    margin: auto;
+    width: 151%;
+    text-align: center;
+}
+.navbar ul {
+    transition: all 2s;
+    display: none;
+    position: relative;
+    z-index: 24;
+    border-radius: 16px;
+    padding: 34px;
+    transform: translate(25px, -41px);
+    background-color: rgba(187, 182, 182, 0.5);
+    text-decoration: none;
+    list-style: none;
+    flex-direction: column;
+    height: 529px;
+    width: 127px;
+    font-size: 27px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .footer-column {
     min-width: 100%;
